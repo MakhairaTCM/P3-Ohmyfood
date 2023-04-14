@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/scss/style.css"/>
+
+     <title>Ohmyfood - Accueil</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="pageLoader"> 
+        <span class="loader"></span>
+    </div> 
+
+    <header>
+            <a href="#"><i class="fa-sharp fa-solid fa-arrow-left IconInvisible"></i></a> <!--la fleche en icone sert de bouton retour qd on est sur la main page d'un restaurant-->
+            <div id="IconSiteHeader"> <img src="images/logo/ohmyfood.png" alt="logo_ohmyfood"></div>
+    </header>
+
+    <main>
+        <section>
+            <div>
+                <div class="BarreRecherche">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <input id="Recherche" type="search" value="Paris, Belleville" />   
+                </div>
+                <div class="BlocTexteExplore">
+                    <h1>Réservez le menu qui vous convient</h1>
+                    <p>Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
+                    <a href="#"class="brightness">Explorer nos restaurants</a>
+                </div>
+            </div>
+            <ul id="BlocFonctionnement">
+                <li id="titreFonctionnement"><h1>Fonctionnement</h1></li>
+                <li class="CardFonctionnement">
+                    <span class="MarkerChiffreFonctionnement">1</span>
+                    <i class="fa-solid fa-mobile-screen-button"></i>
+                    <p class="TexteFonctionnement">Choisissez un restaurant</p>
+                </li>
+                <li class="CardFonctionnement">
+                    <span class="MarkerChiffreFonctionnement">2</span>
+                    <i class="fa-solid fa-bars"></i>
+                    <p class="TexteFonctionnement">Composez votre menu</p>
+                </li>
+                <li class="CardFonctionnement"><span class="MarkerChiffreFonctionnement">3</span>
+                    <i class="fa-solid fa-store"></i>
+                    <p class="TexteFonctionnement">Dégustez au restaurant</p>
+                </li>
+            </ul>
+
+        </section>
+        <section id="sectionRestaurant">
+            <div class="BlocRestaurants">
+                <h1>Restaurants</h1>
+                <a href="LaPaletteDuGout.html"class="CardRestaurant">
+                    <img src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="">
+                    <p class="TexteNouveauRestaurant">Nouveau</p>
+                    <div class="BlocBasDimage">
+                        <div class="BlocTexteRestaurant">
+                            <h2 class="TexteRestaurant">La palette du goût</h2>
+                            <p class="TexteRestaurant">Ménilmontant</p>
+                        </div>
+                        <div class="heartbox margeCoeur" href="#">
+                            <i class="fa-regular fa-heart "></i>
+                            <i class="fa-solid fa-heart"></i>
+                        </div> <!--switch à fa-solid pour la transition au hover-->
+                    </div>
+                </a>  
+
+                <a href="LaNoteEnchantee.html" class="CardRestaurant">
+                        <img src="images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="">
+                        <p class="TexteNouveauRestaurant">Nouveau</p>
+                    <div class="BlocBasDimage">
+                        <div class="BlocTexteRestaurant">
+                            <h2 class="TexteRestaurant">La note enchantée</h2>
+                            <p class="TexteRestaurant">Charonne</p>
+                        </div>
+                        <div class="heartbox margeCoeur" href="#">
+                            <i class="fa-regular fa-heart "></i>
+                            <i class="fa-solid fa-heart"></i>
+                        </div> <!--switch à fa-solid pour la transition au hover-->
+                    </div> 
+                </a> 
+                
+                <a href="ALaFrancaise.html" class="CardRestaurant">
+                        <img src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="">
+                        
+                    <div class="BlocBasDimage">
+                        <div class="BlocTexteRestaurant">
+                            <h2 class="TexteRestaurant">À la française</h2>
+                            <p class="TexteRestaurant">Cité Rouge</p>
+                        </div>
+                        <div class="heartbox margeCoeur" href="#">
+                            <i class="fa-regular fa-heart "></i>
+                            <i class="fa-solid fa-heart"></i>
+                        </div> <!--switch à fa-solid pour la transition au hover-->
+                    </div> 
+                </a>  
+                <a href="LeDeliceDesSens.html" class="CardRestaurant">
+                        <img src="images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="">
+                        
+                    <div class="BlocBasDimage">
+                        <div class="BlocTexteRestaurant">
+                            <h2 class="TexteRestaurant">Le délice des sens</h2>
+                            <p class="TexteRestaurant">Folie-Mérincourt</p>
+                        </div>
+                        <div class="heartbox margeCoeur" href="#">
+                            <i class="fa-regular fa-heart "></i>
+                            <i class="fa-solid fa-heart"></i>
+                        </div><!--switch à fa-solid pour la transition au hover-->
+                    </div> 
+                </a> 
+            </div>
+
+         </div>
+                
+                
+        </section>
+    </main>
+
+    <footer>
+
+        <h1>Ohmyfood</h1>
+
+        <div class="TailleFooterTexteIcon">
+            <i class="fa-solid fa-utensils"></i>
+            <p>Proposer un restaurant</p>
+        </div>
+        <div class="TailleFooterTexteIcon">
+            <i class="fa-solid fa-handshake-angle"></i>
+            <p>Devenir partenaire</p>
+        </div>
+        <a href="#" class="TailleFooterTexteIcon">Mentions légales</a>
+        <a class="TailleFooterTexteIcon">Contact</a>
+
+        
+        
+    </footer>
+    <script src="https://kit.fontawesome.com/ce060f4ec3.js" crossorigin="anonymous"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://kit.fontawesome.com/ce060f4ec3.js" crossorigin="anonymous"></script> <!--Le lien fournis par fontawesome ne fonctionnant pas j'ai cherché le dns ci dessous-->
+</body>

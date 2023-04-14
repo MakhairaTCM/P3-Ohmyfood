@@ -1,0 +1,661 @@
+/*animation hover card menu*/
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap");
+.menuCard:hover .menuCheck i {
+  transition: all 0.5s ease-in;
+  -o-transform: rotate(360deg);
+  -ms-transform: rotate(360deg);
+  -moz-transform: rotate(360deg);
+  -webkit-transform: rotate(360deg);
+  transform: rotate(360deg); }
+
+/*fin animation*/
+@keyframes cardChargement {
+  0% {
+    transform: translate3d(0, 40px, 0); }
+  100% {
+    transform: translate3d(0, 0, 0);
+    opacity: 1; } }
+/*Card chargement pagemenu */
+.cardChargement {
+  opacity: 0;
+  animation: cardChargement 1s forwards;
+  animation-delay: 0.5s; }
+
+.animationDelay1 {
+  animation-delay: 1s; }
+
+.animationDelay2 {
+  animation-delay: 2s; }
+
+.animationDelay3 {
+  animation-delay: 2.5s; }
+
+/*color*/
+body {
+  width: 100%;
+  margin: 0;
+  max-width: 1800px;
+  margin: auto;
+  font-family: 'Roboto', sans-serif; }
+  body a {
+    text-decoration: none; }
+
+.BlocTexteExplore {
+  display: flex;
+  width: 100%;
+  margin: auto;
+  height: 250px;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  background-color: #f1f1f1; }
+  .BlocTexteExplore p {
+    margin-top: 0px; }
+  .BlocTexteExplore h1 {
+    margin-top: -10px; }
+  .BlocTexteExplore a {
+    text-decoration: none;
+    padding: 15px;
+    border-radius: 30px;
+    background: linear-gradient(180deg, #FF79DA 0%, #9356DC 100%);
+    margin: auto;
+    color: white;
+    box-shadow: 0px 1px 3px 3px #dedede;
+    margin-top: 5px;
+    margin-bottom: 0px; }
+    .BlocTexteExplore a:hover {
+      filter: brightness(110%);
+      box-shadow: 0px 1px 3px 3px #a39b9b; }
+  @media (min-width: 992px) {
+    .BlocTexteExplore {
+      width: 38%;
+      margin-top: 34px;
+      border-radius: 30px; } }
+
+#BlocFonctionnement {
+  list-style-type: none;
+  padding-left: 2%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 98%; }
+  @media (min-width: 992px) {
+    #BlocFonctionnement {
+      flex-direction: row; }
+      #BlocFonctionnement #titreFonctionnement {
+        width: 100%; } }
+  #BlocFonctionnement .CardFonctionnement {
+    display: flex;
+    flex-direction: row;
+    width: 75%;
+    align-items: center;
+    justify-content: left;
+    padding: 20px;
+    background-color: #f1f1f1;
+    border-radius: 30px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    cursor: pointer; }
+    @media (min-width: 992px) {
+      #BlocFonctionnement .CardFonctionnement {
+        width: 23%;
+        margin: auto; } }
+    #BlocFonctionnement .CardFonctionnement i {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 20px;
+      font-size: 1.3em;
+      margin-right: 15px; }
+    #BlocFonctionnement .CardFonctionnement:hover {
+      background-color: #d2c4e98a; }
+      #BlocFonctionnement .CardFonctionnement:hover i {
+        color: #9356DC; }
+    #BlocFonctionnement .CardFonctionnement .MarkerChiffreFonctionnement {
+      display: flex;
+      margin-left: -33px;
+      padding: 10px;
+      height: 10px;
+      background-color: #9356DC;
+      border-radius: 50px;
+      color: white;
+      align-items: center;
+      margin-right: 17px; }
+
+footer {
+  display: flex;
+  flex-direction: column;
+  width: 88%;
+  background-color: grey;
+  color: white;
+  padding: 6%; }
+  footer h1 {
+    font-family: Shrikhand;
+    margin: 0; }
+  @media (min-width: 992px) {
+    footer {
+      height: 150px;
+      justify-content: center;
+      align-items: center;
+      margin: auto;
+      width: 88%;
+      border-radius: 30px 30px 0 0; } }
+  footer .TailleFooterTexteIcon {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    margin-top: 10px;
+    font-size: 20px; }
+    footer .TailleFooterTexteIcon i {
+      margin-right: 10px;
+      font-size: 16px; }
+    footer .TailleFooterTexteIcon p {
+      margin: 0; }
+
+.footerPage {
+  display: flex;
+  flex-direction: column;
+  background-color: grey;
+  padding: 6%;
+  color: white; }
+  .footerPage h1 {
+    font-family: Shrikhand;
+    margin: 0; }
+  .footerPage .TailleFooterTexteIcon {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    margin-top: 10px;
+    font-size: 20px; }
+    .footerPage .TailleFooterTexteIcon i {
+      margin-right: 10px;
+      font-size: 16px; }
+    .footerPage .TailleFooterTexteIcon p {
+      margin: 0; }
+
+#sectionRestaurant {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  margin-bottom: 75px;
+  background-color: #f1f1f1; }
+  @media (min-width: 992px) {
+    #sectionRestaurant {
+      display: flex;
+      justify-content: center; } }
+  #sectionRestaurant .BlocRestaurants {
+    padding: 15px; }
+    @media (min-width: 992px) {
+      #sectionRestaurant .BlocRestaurants {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center; }
+        #sectionRestaurant .BlocRestaurants h1 {
+          width: 100%; } }
+    #sectionRestaurant .BlocRestaurants .CardRestaurant {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      height: 300px;
+      background-color: white;
+      margin-bottom: 15px;
+      position: relative;
+      border-radius: 20px; }
+      #sectionRestaurant .BlocRestaurants .CardRestaurant img {
+        border-radius: 15px 15px 0px 0px;
+        width: 100%;
+        height: 70%;
+        object-fit: cover; }
+      #sectionRestaurant .BlocRestaurants .CardRestaurant i {
+        display: flex;
+        margin: auto;
+        justify-content: center;
+        align-items: center;
+        font-size: 27px; }
+      @media (min-width: 992px) {
+        #sectionRestaurant .BlocRestaurants .CardRestaurant {
+          width: 46%;
+          margin: 10px; } }
+      #sectionRestaurant .BlocRestaurants .CardRestaurant .TexteNouveauRestaurant {
+        position: absolute;
+        margin-left: 69%;
+        margin-right: 23%;
+        padding: 10px;
+        color: green;
+        background-color: #99E2D0;
+        width: 20%;
+        display: flex;
+        justify-content: center;
+        align-items: center; }
+      #sectionRestaurant .BlocRestaurants .CardRestaurant .BlocBasDimage {
+        display: flex;
+        flex-direction: row; }
+        #sectionRestaurant .BlocRestaurants .CardRestaurant .BlocBasDimage .BlocTexteRestaurant {
+          display: flex;
+          width: 80%;
+          flex-direction: column;
+          padding: 10px; }
+          #sectionRestaurant .BlocRestaurants .CardRestaurant .BlocBasDimage .BlocTexteRestaurant .TexteRestaurant {
+            margin: 0;
+            margin-bottom: 5px;
+            font-size: 19px;
+            color: black; }
+        #sectionRestaurant .BlocRestaurants .CardRestaurant .BlocBasDimage .margeCoeur {
+          margin-left: 15%; }
+        #sectionRestaurant .BlocRestaurants .CardRestaurant .BlocBasDimage .heartbox {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          position: relative; }
+        #sectionRestaurant .BlocRestaurants .CardRestaurant .BlocBasDimage .fa-heart {
+          position: absolute;
+          top: 20px;
+          right: 20px;
+          font-size: 30px;
+          cursor: pointer; }
+        #sectionRestaurant .BlocRestaurants .CardRestaurant .BlocBasDimage .fa-heart.fa-regular {
+          opacity: 1;
+          color: grey; }
+          #sectionRestaurant .BlocRestaurants .CardRestaurant .BlocBasDimage .fa-heart.fa-regular:hover {
+            opacity: 0; }
+        #sectionRestaurant .BlocRestaurants .CardRestaurant .BlocBasDimage .fa-heart.fa-solid {
+          color: transparent;
+          background: linear-gradient(360deg, #FF79DA 0%, #9356DC 60%);
+          background-clip: text;
+          -webkit-background-clip: text;
+          opacity: 0;
+          transition: opacity 0.5s ease-in-out; }
+          #sectionRestaurant .BlocRestaurants .CardRestaurant .BlocBasDimage .fa-heart.fa-solid:hover {
+            opacity: 1;
+            transform: scale(1.02); }
+
+header {
+  display: flex;
+  width: 100%;
+  height: 75px;
+  border-bottom: 2px solid #dedede; }
+  header .fa-arrow-left {
+    display: flex;
+    height: 0px;
+    width: 0px;
+    color: transparent; }
+  header .visible {
+    height: 20px;
+    width: 20px;
+    color: black;
+    align-items: center;
+    justify-content: left; }
+  header #IconSiteHeader {
+    margin: auto; }
+    header #IconSiteHeader img {
+      display: flex;
+      width: 200px;
+      height: auto; }
+
+.headerPage {
+  display: flex;
+  width: 100%;
+  height: 75px;
+  border-bottom: 2px solid #dedede; }
+  .headerPage a {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    color: black;
+    text-decoration: none;
+    margin-left: 10px; }
+  .headerPage .visible {
+    height: 20px;
+    width: 20px;
+    color: black;
+    align-items: center;
+    justify-content: left; }
+  .headerPage #IconSiteHeader {
+    margin: auto; }
+    .headerPage #IconSiteHeader img {
+      display: flex;
+      width: 200px;
+      height: auto; }
+
+.BarreRecherche {
+  display: flex;
+  width: 100%;
+  height: 50px;
+  background-color: #D8D8D8;
+  justify-content: center;
+  align-items: center; }
+  .BarreRecherche i {
+    margin-right: 7px; }
+  .BarreRecherche #Recherche {
+    border: 0px;
+    background-color: #D8D8D8; }
+
+.imagePlusMenu {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap; }
+  .imagePlusMenu img {
+    display: flex;
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    position: relative; }
+  .imagePlusMenu .menu {
+    display: flex;
+    background-color: #f1f1f1;
+    border-radius: 40px 40px 0 0;
+    margin-top: -40px;
+    flex-direction: column;
+    padding: 2%;
+    padding-bottom: 6%;
+    z-index: 1;
+    max-width: 96%;
+    flex-wrap: wrap; }
+    @media (min-width: 992px) {
+      .imagePlusMenu .menu {
+        flex-direction: row; } }
+    .imagePlusMenu .menu .titreRestaurant {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      font-family: Shrikhand; }
+      .imagePlusMenu .menu .titreRestaurant .heartbox {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative; }
+      .imagePlusMenu .menu .titreRestaurant .fa-heart {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        font-size: 30px;
+        cursor: pointer; }
+      .imagePlusMenu .menu .titreRestaurant .fa-heart.fa-regular {
+        opacity: 1;
+        color: grey; }
+        .imagePlusMenu .menu .titreRestaurant .fa-heart.fa-regular:hover {
+          opacity: 0; }
+      .imagePlusMenu .menu .titreRestaurant .fa-heart.fa-solid {
+        color: transparent;
+        background: linear-gradient(360deg, #FF79DA 0%, #9356DC 60%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        opacity: 0;
+        transition: opacity 0.5s ease-in-out; }
+        .imagePlusMenu .menu .titreRestaurant .fa-heart.fa-solid:hover {
+          opacity: 1;
+          transform: scale(1.02); }
+    .imagePlusMenu .menu .blocTiersMenu {
+      width: 100%;
+      overflow: hidden;
+      margin-top: 20px; }
+      @media (min-width: 992px) {
+        .imagePlusMenu .menu .blocTiersMenu {
+          margin: auto;
+          width: 45%; } }
+      .imagePlusMenu .menu .blocTiersMenu h2 {
+        width: 45px;
+        border-bottom: solid 2px #99E2D0;
+        color: gray;
+        font-size: 18px;
+        text-transform: uppercase; }
+        @media (min-width: 992px) {
+          .imagePlusMenu .menu .blocTiersMenu h2 {
+            height: 28px;
+            margin-right: 100%; } }
+      .imagePlusMenu .menu .blocTiersMenu .menuCard {
+        min-width: 40%;
+        border-radius: 15px;
+        transition-duration: 0.3s;
+        box-shadow: 0px 7px 13px 1px #dedede;
+        background-color: white;
+        width: 96%;
+        border-radius: 15px; }
+        .imagePlusMenu .menu .blocTiersMenu .menuCard .menu_resume {
+          display: flex;
+          margin-top: 20px;
+          margin-bottom: 20px;
+          overflow: hidden;
+          text-overflow: ellipsis; }
+          .imagePlusMenu .menu .blocTiersMenu .menuCard .menu_resume:hover .menuCheck {
+            margin-right: 0px; }
+          .imagePlusMenu .menu .blocTiersMenu .menuCard .menu_resume .menuTexte {
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis; }
+            .imagePlusMenu .menu .blocTiersMenu .menuCard .menu_resume .menuTexte p {
+              color: black;
+              margin: 0px;
+              white-space: nowrap;
+              overflow: hidden;
+              text-overflow: ellipsis;
+              margin-top: 15px;
+              margin-left: 15px; }
+            .imagePlusMenu .menu .blocTiersMenu .menuCard .menu_resume .menuTexte h3 {
+              margin: 0px;
+              overflow: hidden;
+              white-space: nowrap;
+              text-overflow: ellipsis;
+              margin-left: auto;
+              margin-right: 20px;
+              margin-left: 15px;
+              margin-top: 15px; }
+          .imagePlusMenu .menu .blocTiersMenu .menuCard .menu_resume .prix {
+            font-weight: bold;
+            margin-left: auto;
+            margin-top: 54px;
+            margin-right: 20px;
+            color: black;
+            overflow: visible;
+            padding-left: 10px; }
+          .imagePlusMenu .menu .blocTiersMenu .menuCard .menu_resume .menuCheck {
+            margin-right: -85px;
+            min-width: 80px;
+            height: 90px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #99E2D0;
+            border-radius: 0 15px 15px 0;
+            transition: all 0.5s;
+            color: white; }
+            .imagePlusMenu .menu .blocTiersMenu .menuCard .menu_resume .menuCheck i.fa-solid.fa-circle-check {
+              margin-bottom: 1px;
+              font-size: 30px; }
+    @media (min-width: 992px) {
+      .imagePlusMenu .menu .conteneurBoutton {
+        display: flex;
+        width: 50%;
+        align-items: center;
+        justify-content: center; } }
+    .imagePlusMenu .menu .conteneurBoutton a {
+      text-decoration: none;
+      padding: 15px;
+      border-radius: 30px;
+      background: linear-gradient(180deg, #FF79DA 0%, #9356DC 100%);
+      margin: auto;
+      color: white;
+      box-shadow: 0px 1px 3px 3px #dedede;
+      margin-top: 35px;
+      margin-bottom: 50px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 120px; }
+      @media (min-width: 992px) {
+        .imagePlusMenu .menu .conteneurBoutton a {
+          height: 25px;
+          width: 125px;
+          margin-left: 20%;
+          margin-right: 20%; } }
+      .imagePlusMenu .menu .conteneurBoutton a:hover {
+        filter: brightness(110%);
+        box-shadow: 0px 1px 3px 3px #a39b9b; }
+
+        /*.blocTiersMenu{
+            margin-bottom: 10px;
+            overflow: hidden;
+            @media (min-width: 992px){
+                margin-bottom: 25px;
+                display: flex;
+                flex-wrap: wrap;
+                width: 50%;
+            }
+
+                        
+            .cardMenu{
+                display: flex;
+                width: 95%;
+                height: 70px;
+                box-shadow: 0px 7px 13px 1px #dedede;
+                margin-bottom: 15px;
+                border-radius: 10px;
+                overflow: hidden;
+
+                
+                .blocTextePrixCard{
+                    width: 100%;
+                    display: flex;
+                    flex-direction: row;
+                    margin: auto;
+                    margin-left: 7px;
+                    height: 70px;
+
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    .blocTexteCard{
+                        width: 70%;
+                        height: 70px;
+
+                    }
+                    .blocPrixCard{
+                        display: flex;
+                        align-items: end;
+                        justify-content: center;
+                        width: 20%;
+                    }
+
+                    &:hover{
+                        .check{
+                            margin-right: 0;
+                        }
+                    }
+                    
+                    .check{
+                        // width: 0px;
+                        // i{
+                        //     display: flex;
+                        //     align-items: center;
+                        //     justify-content: center;
+                        //     padding: 10px;
+                        //     width: 10px;
+                        //     height: 10px;
+                        //     border-radius: 30px;
+                        //     background-color: white;
+                        //     color: #99E2D0;
+                        // }
+                        margin-right: -85px;
+                        min-width: 80px;
+                        height: 70px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        background-color: #99E2D0;
+                        border-radius: 0 15px 15px 0;
+                        transition: all 0.5s;
+                        color: white;
+                    }
+
+                }
+
+                p{
+                    margin: 0px;
+                    overflow: hidden;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                
+                }
+                h3{
+                    margin: 0px;
+                    overflow: hidden;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                    margin-left: auto;
+                    margin-right: 20px;
+                }
+            }
+
+            
+        }
+        */
+.pageLoader {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  background-color: white;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  inset: 0;
+  animation: pageLoaderDuree 0s 3s forwards;
+  justify-content: center; }
+
+@keyframes pageLoaderDuree {
+  100% {
+    height: 0;
+    width: 0;
+    opacity: 0; } }
+.loader {
+  position: absolute;
+  margin-left: 5%;
+  width: 125px;
+  height: 125px;
+  border-radius: 50%;
+  border: 10px solid;
+  border-color: #9356DC #9356DC transparent transparent;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite; }
+
+.loader::after,
+.loader::before {
+  content: '';
+  box-sizing: border-box;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  border: 10px solid;
+  border-color: transparent transparent #FF79DA #FF79DA;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  box-sizing: border-box;
+  animation: rotationBack 0.5s linear infinite;
+  transform-origin: center center; }
+
+.loader::before {
+  width: 75px;
+  height: 75px;
+  border-color: #99E2D0 #99E2D0 transparent transparent;
+  animation: rotation 1.5s linear infinite; }
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg); }
+  100% {
+    transform: rotate(360deg); } }
+@keyframes rotationBack {
+  0% {
+    transform: rotate(0deg); }
+  100% {
+    transform: rotate(-360deg); } }
+
+/*# sourceMappingURL=style.css.map */

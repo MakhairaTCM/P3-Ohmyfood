@@ -1,0 +1,40 @@
+
+
+
+
+/*animation hover card menu*/
+
+.menuCard:hover .menuCheck i{
+  transition: all 0.5s ease-in ;
+  -o-transform:rotate(360deg);
+  -ms-transform:rotate(360deg);
+  -moz-transform:rotate(360deg);
+  -webkit-transform:rotate(360deg);
+  transform:rotate(360deg);
+}
+/*fin animation*/
+
+@keyframes cardChargement {
+  0% {
+    transform: translate3d(0,40px,0);
+  }
+  100% {
+    transform: translate3d(0,0,0);
+    opacity: 1;
+  }
+}
+/*Card chargement pagemenu */
+.cardChargement {
+  opacity: 0;
+  animation: cardChargement 1s forwards;
+  animation-delay: 0.5s;
+}
+.animationDelay1{
+  animation-delay: 1s;
+}
+.animationDelay2{
+  animation-delay: 2s;
+}
+.animationDelay3{
+  animation-delay: 2.5s;
+}
